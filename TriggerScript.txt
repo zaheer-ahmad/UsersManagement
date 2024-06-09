@@ -1,0 +1,24 @@
+CREATE TRIGGER trgAfterInsertAspNetUsers
+ON AspNetUsers
+AFTER INSERT
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    INSERT INTO AuditLogs(Name, UserName,Email,AuditLogType,CreatedBy,CreatedOn)
+    SELECT Name, UserName,Email,'Insert',ActionUser, GETDATE()
+    FROM inserted
+END;
+GO
+
+CREATE TRIGGER trgAfterUpdateAspNetUsers
+ON AspNetUsers
+    FOR UPDATE
+    AS
+    BEGIN
+
+		INSERT INTO AuditLogs(Name, UserName,Email,AuditLogType,CreatedBy,CreatedOn)
+			SELECT Name, UserName,Email,(case when inserted.IsActive = 1 then 'Update'else 'Delete'end),ActionUser, GETDATE()
+			FROM inserted
+
+    END

@@ -1,0 +1,26 @@
+
+
+<div class="container mt-3" style="height: 500;">
+
+  <a class="btn btn-primary mb-3" href="adduser"  *ngIf="userRole == 'Admin'" >{{'Add New User'|translate}}</a>
+
+  <table datatable [dtOptions]="dtOptions" class="row-border hover table table-striped table-bordered" >
+    <thead>
+      <tr>
+        <th>{{'Name'|translate}}</th>
+        <th>{{'User Name'|translate}}</th>
+        <th>{{'Email'|translate}}</th>
+        <th *ngIf="userRole == 'admin'">{{'Action'|translate}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.name }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
+        <td *ngIf="userRole == 'admin'"><div ><a href="edituser" id="edituser" >Edit</a> | <a href="deleteuser" id="deleteuser">Delete |</a></div><a href="viewuser" id="viewuser">Delete |</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

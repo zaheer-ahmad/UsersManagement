@@ -1,0 +1,14 @@
+C:\Users\Zaheer.Ahmed\Documents\Docs\UserManagement\UserManagement.Data\bin\Debug\net8.0\UserManagement.Data.deps.json
+C:\Users\Zaheer.Ahmed\Documents\Docs\UserManagement\UserManagement.Data\bin\Debug\net8.0\UserManagement.Data.runtimeconfig.json
+C:\Users\Zaheer.Ahmed\Documents\Docs\UserManagement\UserManagement.Data\bin\Debug\net8.0\UserManagement.Data.dll
+C:\Users\Zaheer.Ahmed\Documents\Docs\UserManagement\UserManagement.Data\bin\Debug\net8.0\UserManagement.Data.pdb
+C:\Users\Zaheer.Ahmed\Documents\Docs\UserManagement\UserManagement.Data\obj\Debug\net8.0\UserManagement.Data.csproj.AssemblyReference.cache
+C:\Users\Zaheer.Ahmed\Documents\Docs\UserManagement\UserManagement.Data\obj\Debug\net8.0\UserManagement.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Zaheer.Ahmed\Documents\Docs\UserManagement\UserManagement.Data\obj\Debug\net8.0\UserManagement.Data.AssemblyInfoInputs.cache
+C:\Users\Zaheer.Ahmed\Documents\Docs\UserManagement\UserManagement.Data\obj\Debug\net8.0\UserManagement.Data.AssemblyInfo.cs
+C:\Users\Zaheer.Ahmed\Documents\Docs\UserManagement\UserManagement.Data\obj\Debug\net8.0\UserManagement.Data.csproj.CoreCompileInputs.cache
+C:\Users\Zaheer.Ahmed\Documents\Docs\UserManagement\UserManagement.Data\obj\Debug\net8.0\UserManagement.Data.dll
+C:\Users\Zaheer.Ahmed\Documents\Docs\UserManagement\UserManagement.Data\obj\Debug\net8.0\refint\UserManagement.Data.dll
+C:\Users\Zaheer.Ahmed\Documents\Docs\UserManagement\UserManagement.Data\obj\Debug\net8.0\UserManagement.Data.pdb
+C:\Users\Zaheer.Ahmed\Documents\Docs\UserManagement\UserManagement.Data\obj\Debug\net8.0\UserManagement.Data.genruntimeconfig.cache
+C:\Users\Zaheer.Ahmed\Documents\Docs\UserManagement\UserManagement.Data\obj\Debug\net8.0\ref\UserManagement.Data.dll

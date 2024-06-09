@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card mt-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">{{'Edit User'|translate}}</h5>
+            <form (ngSubmit)="onSubmit(editUserForm)" #editUserForm="ngForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">{{'Name'|translate}}</label>
+                    <input type="text" name="name"
+                     class="form-control"
+                     [ngClass]="{ 'is-invalid': nameCtrl.invalid && (nameCtrl.touched || formSubmitted)}" 
+                     id="username" required #nameCtrl="ngModel" [(ngModel)]="name">
+                  </div>
+              <div class="mb-3">
+                <label for="username" class="form-label">{{'User Name'|translate}}</label>
+                <input type="text" name="username"
+                 class="form-control"
+                 [disabled]="true" value="{{username}}"
+                 id="username"  #usernameCtrl="ngModel" ngModel>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">{{'Email'|translate}}</label>
+                <input type="email" name="email"
+                 class="form-control" 
+                 [ngClass]="{ 'is-invalid': emailCtrl.invalid && (emailCtrl.touched || formSubmitted)}"
+                 id="email" required #emailCtrl="ngModel" email [(ngModel)]="email">
+              </div>
+              <div class="mb-3">
+                <label for="Role" class="form-label">{{'Role'|translate}}</label>
+                <select name="role" class="form-control"
+                [ngClass]="{ 'is-invalid': roleCtrl.invalid && (roleCtrl.touched || formSubmitted)}"
+                #roleCtrl="ngModel" [(ngModel)]="role" required 
+                >
+                    <option value="">{{'Select Role'|translate}}</option>
+                    <option value="Admin">{{'Admin'|translate}}</option>
+                    <option value="User">{{'User'|translate}}</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">{{'Submit'|translate}}</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
