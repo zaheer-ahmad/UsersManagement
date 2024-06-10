@@ -30,8 +30,7 @@
 
  **Notes**
 
- For the scope of work all user password are created from backend, Password can be find from postman collection login request. In real application a link send to user to create password
- agaist the profile.
+ For the scope of work all user password are created from backend, Password can be find from postman collection login request. In real application a link send to user to create password against the profile.
 
  
 
